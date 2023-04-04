@@ -67,7 +67,7 @@ export default function Login() {
             </div>
 
             <button className="login-btn" type="submit" onClick={handleLogin}>Masuk</button>
-            <p className="register-text">Belum registrasi ? Silahkan klik <a href="/signup" className="sign-up">Daftar</a></p>
+            <p className="register-text">Belum registrasi ? Silahkan klik <button style={{border:'none', backgroundColor:'transparent'}} onClick={() => navigate('/signup')} className="sign-up">Daftar</button></p>
 
         </form>
 

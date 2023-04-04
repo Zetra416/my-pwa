@@ -299,6 +299,7 @@ label {
 .sign-up {
   text-decoration: none;
   color: red;
+  cursor: pointer;
 }
 
 .form-title {
@@ -850,3 +851,6 @@ label {
   margin: 8px 14px 10px 12px;
 }
 
+.href-btn:hover {
+  cursor: pointer;
+}

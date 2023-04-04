@@ -1,11 +1,10 @@
 import DonutChart from '../components/donut-chart';
 import logo from '../logo.svg';
-
+import { useNavigate } from 'react-router-dom';
 
 
 export default function Home() {
-    
-      
+    const navigate = useNavigate()
     return (
         <div className="home-page">
             <div className='sidebar'>
@@ -13,12 +12,12 @@ export default function Home() {
                     <img src={logo} width={"200px"} alt="logo" />
                 </div>
                 <ul>
-                    <li><img src="./assets/home.png" width={"18px"} alt="home"/><a href="/home">Homepage</a></li>
-                    <li><img src="./assets/bag.png" width={"18px"} alt="bag"/><a href="/comingsoon">Sales</a></li>
-                    <li><img src="./assets/box.png" width={"18px"} alt="box"/><a href="/comingsoon">Inventory</a></li>
-                    <li><img src="./assets/cart.png" width={"18px"} alt="cart"/><a href="/comingsoon">Purchase</a></li>
-                    <li><img src="./assets/user.png" width={"18px"} alt="user"/><a href="/comingsoon">User Management</a></li>
-                    <li><img src="./assets/logout.png" width={"18px"} alt="logout"/><a href="/">Logout</a></li>
+                    <li><img src="./assets/home.png" width={"18px"} alt="home"/><button className='href-btn' style={{border:'none', backgroundColor:'transparent'}} onClick={() => navigate('/home')}>Homepage</button></li>
+                    <li><img src="./assets/bag.png" width={"18px"} alt="bag"/><button className='href-btn' style={{border:'none', backgroundColor:'transparent'}} onClick={() => navigate('/comingsoon')}>Sales</button></li>
+                    <li><img src="./assets/box.png" width={"18px"} alt="box"/><button className='href-btn' style={{border:'none', backgroundColor:'transparent'}} onClick={() => navigate('/comingsoon')}>Inventory</button></li>
+                    <li><img src="./assets/cart.png" width={"18px"} alt="cart"/><button className='href-btn' style={{border:'none', backgroundColor:'transparent'}} onClick={() => navigate('/comingsoon')}>Purchase</button></li>
+                    <li><img src="./assets/user.png" width={"18px"} alt="user"/><button className='href-btn' style={{border:'none', backgroundColor:'transparent'}} onClick={() => navigate('/comingsoon')}>User Management</button></li>
+                    <li><img src="./assets/logout.png" width={"18px"} alt="logout"/><button className='href-btn' style={{border:'none', backgroundColor:'transparent'}} onClick={() => navigate('/')}>Logout</button></li>
                 </ul>
             </div>
 
