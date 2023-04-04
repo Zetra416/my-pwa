@@ -4,4 +4,4 @@
 
 
 # Demo live link
-https://pharmaniaga-pwa-zetra.netlify.app/home
+https://pharmaniaga-pwa-zetra.netlify.app
